@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+  </head>
+  <body>
+    <div class="form1">
+      <h1>LBRCE</h1>
+      <form class="result" action="#" method="POST">
+        {% csrf_token %}
+        <input type="text"name="hallticket"placeholder="Enter your hallticket" required><br><br>
+        <input type="date" name='dateofbirth'><br><br>
+        <input type="submit" name="button" value="Get Result">
+      </form>
+    </div>
+  </body>
+</html>

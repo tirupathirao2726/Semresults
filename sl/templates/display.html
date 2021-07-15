@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Result</title>
+    <link rel="stylesheet" href="{% static 'css/display.css' %}">
+</head>
+<body>
+<div class="main_tables" style="padding: 104px;">
+<div id="t1">
+<marquee direction="right"><h6 style="font-size: large; font-family: Georgia, 'Times New Roman', Times, serif;">SEMISTER-2 RESULTS</h6> </marquee>
+<table class="t1" style="width: 100%;">
+<tr>
+<td><h6>HallTicket No</h6></td>
+<td><h6>{{ht}}</h6></td>
+</tr>
+<tr>
+<td><h6>Regulation</h6></td>
+<td><h6>{{reg}}</h6></td>
+</tr>
+<tr>
+<td><h6>Examtype</h6></td>
+<td><h6>{{et}}</h6></td>
+</tr>
+<tr>
+    <td><h6>Status</h6></td>
+    <td><h5>{{status}}</h5></td>
+
+</tr>
+</table>
+</div>
+<div id="t2">
+<table class="t2" style="width: 100%;">
+<tr>
+<th><h6 style="text-align: center;">Subject Code</h6></th>
+<th><h6 style="text-align: center;">Subject Name</h6></th>
+<th><h6 style="text-align: center;">Grade</h6></th>
+</tr>
+<tr>
+<td><h6>17FE02</h6></td>
+<td><h6>Professional Communication-II</h6></td>
+<td><h6>{{fe02}}</h6></td>
+</tr>
+<tr>
+<td><h6>17FE06</h6></td>
+<td><h6>Transformation Techniques and Vector Calculus</h6></td>
+<td><h6>{{fe06}}</h6></td>
+</tr>
+<tr>
+<td><h6>17FE12</h6></td>
+<td><h6>Applied Physics</h6></td>
+<td><h6>{{fe12}}</h6></td>
+</tr>
+<tr>
+<td><h6>17EE52</h6></td>
+<td><h6>Basic Electrical Engineering</h6></td>
+<td><h6>{{ee52}}</h6></td>
+</tr>
+<tr>
+<td><h6>17CI02</h6></td>
+<td><h6>Digital Logic</h6></td>
+<td><h6>{{ci02}}</h6></td>
+</tr>
+<tr>
+<td><h6>17F62</h6></td>
+<td><h6>Applied Physics Lab</h6></td>
+<td><h6>{{fe62}}</h6></td>
+</tr>
+<tr>
+<td><h6>17FE60</h6></td>
+<td><h6>English Communication Skills Lab</h6></td>
+<td><h6>{{fe60}}</h6></td>
+</tr>
+<tr>
+<td><h6>17CS60</h6></td>
+<td><h6>Digital Logic Design Lab</h6></td>
+<td><h6>{{cs60}}</h6></td>
+</tr>
+<tr>
+<td><h6>17ME75</h6></td>
+<td><h6>Computer Aided Engineering Drawing Lab</h6></td>
+<td><h6>{{me75}}</h6></td>
+</tr>
+</table>
+<table style="width:100%">
+    <tr>
+        <td><h5>SGPA</h5></td>
+        <td><h5>{{sgpa}}</h5></td>
+        </tr>
+</table>
+</div>
+</div>
+</body>
+</html>

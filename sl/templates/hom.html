@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+  </head>
+  <body>
+    <div class="form1">
+      <h1>LBRCE</h1>
+      <form class="result" action="#" method="POST">
+        {% csrf_token %}
+        <input type="text"name="hallticket"placeholder="Enter your hallticket" required><br><br>
+        <select name="regulation" required>
+          <option value="" disabled selected hidden>Choose Regulation</option>
+          <option value="R14">R14</option>
+          <option value="R17">R17</option>
+          <option value="R20">R20</option>
+        </select><br><br>
+        <select  name="Semister" required>
+          <option value="" disabled selected hidden>Choose Semister</option>
+          <option value="one">I</option>
+          <option value="two">II</option>
+          <option value="three">III</option>
+          <option value="four">IV</option>
+          <option value="five">V</option>
+          <option value="six">VI</option>
+          <option value="seven">VII</option>
+          <option value="eight">VIII</option>
+        </select><br><br>
+        <select  name="branch" required>
+          <option value="" disabled selected hidden>Choose Branch</option>
+          <option value="cse">CSE</option>
+          <option value="ece">ECE</option>
+          <option value="it">IT</option>
+          <option value="mech">MECH</option>
+          <option value="eee">EEE</option>
+          <option value="eie">EIE</option>
+          <option value="aero">AERO</option>
+        </select><br><br>
+        <select id="examtype" name="examtype" required>
+          <option value=""disabled selected hidden>Choose examtype</option>
+          <option value="Reg">Regular</option>
+          <option value="Supp">Supplementary</option>
+        </select><br>
+        <input type="submit" name="button" value="Get Result">
+      </form>
+    </div>
+  </body>
+</html>

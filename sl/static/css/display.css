@@ -1,0 +1,19 @@
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th,td{
+    padding: 0px;
+}
+th{
+    text-align: left;
+}
+table{
+    border-spacing: 0px;
+}
+.main_tables{
+    padding: 104px;
+}
+body{
+    background-color: gainsboro;
+}
